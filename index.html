@@ -17,18 +17,18 @@
         <!--Home Screen-->
         <section id="home-screen" class="intro text-white flex flex-col min-h-screen items-center justify-center ">
             <div class="flex flex-col items-center gap-10">
-                <h1 class="text-8xl font-extrabold">Alphabet Clash</h1>
+                <h1 class="text-5xl lg:text-7xl font-extrabold">Alphabet Clash</h1>
                 <p>Unleash Your Keyboard Kung Fu: Press "Enter" to Play</p>
-                <button onclick="push()" class="btn">Play Now</button>
+                <button onclick="push()" class="btn bg-black text-white border-none">Play Now</button>
             </div>
         </section>
         <!--Game section-->
         <section id="game" class=" hidden">
              <!--screen-->
              <div class="flex justify-center">
-                <div class="artboard artboard-horizontal phone-6 border-[20px] border-[#3b4591cc] rounded-2xl bg-[#FFFFFFB3] mt-10">
+                <div class="artboard artboard-horizontal phone-6 border-[20px] border-[#01031399] rounded-2xl bg-[#FFFFFFB3] mt-10">
                     <div class="flex justify-center text-white">
-                       <p class=" bg-[#2F2941] p-4 rounded-b-2xl">Don't Watch Keyboard while playing.</p> 
+                       <p class=" bg-[#2F2941CC] p-4 rounded-b-2xl">Don't Watch Keyboard while playing.</p> 
                     </div>
                     <div class="flex  justify-center">
                         <p id="current-alphavet" class="text-9xl font-bold">Y</p>
@@ -76,25 +76,27 @@
              <!--link-->
              <div class="flex justify-around mt-12">
                 <button class="btn text-2xl text-white rounded-full px-5 bg-[#894189] border-none">
-                    Button
+                    LIFE
                     <img src="images/heart.png" alt="">
-                    <span>1</span>
+                    <span id="current-life">5</span>
                   </button>
+                  <!--score-->
                 <button class="btn text-2xl text-white rounded-full px-5 bg-[#360490] border-none">
-                    Button
-                    <img src="images/heart.png" alt="">
-                    <span>1</span>
+                    SCORE
+                    <img src="images/dolar.png" alt="">
+                    <span id="current-score">0</span>
                   </button>
              </div>
         </section>
         <!--score-->
-        <section class="score flex flex-col items-center text-center h-screen justify-center hidden">
-            <div class="text-white bg-[#9b65ce] p-5 rounded-xl">
+        <section id="score" class="score flex flex-col items-center text-center h-screen justify-center hidden">
+            <div class="text-white bg-[#9b65ce] p-5 rounded-xl bg-gradient-to-r from-violet-500 to-fuchsia-500">
+                <h1 class="text-2xl font-bold">Game Over !</h1>
                 <h1 class="text-5xl font-bold py-4">
                     <span>Score :</span>
-                    <span>14</span>                   
+                    <span id="final-score">14</span>                   
                 </h1>
-                <button class="btn text-xl">Play Now</button>
+                <button onclick="push()" class="btn text-xl bg-black text-white border-none">Play Now</button>
                 <p class="py-4 text-xl">Practice will make you pro</p>
             </div>
         </section>

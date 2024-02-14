@@ -12,6 +12,23 @@ function setBackgroundColor(elementId){
     const element = document.getElementById(elementId);
     element.classList.add('bg-amber-600');
 }
+//Remove Background Color
+function removeBackColor (elementId){
+    const element = document.getElementById(elementId)
+    element.classList.remove('bg-amber-600');
+}
+//score raw input
+function getTextElementValueById(elementId){
+    const element = document.getElementById(elementId);
+    const elementText = element.innerText;
+    const value = parseInt(elementText);
+    return value;
+}
+//set that updated score
+function setTextElementValueById (elementId,value){
+    const element = document.getElementById(elementId);
+    element.innerText = value;
+}
 
 function getRandomAlphabet(){
     // get or create an alphabet array
@@ -26,4 +43,13 @@ function getRandomAlphabet(){
     const alphabet = alphabets[index];
     //console.log(index,alphabet);
     return alphabet;
+}
+
+
+//for text 
+function getElementTextById (elementId){
+    const element = document.getElementById(elementId);
+    const text = element.innerText;
+    return text;
+
 }
